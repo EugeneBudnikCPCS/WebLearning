@@ -1,0 +1,88 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+.navbar {
+  width: 100vw;
+  height: 3.75em;
+  position: relative;
+}
+
+.navbarLogo {
+  margin: 0;
+  margin-left: 5.3125em;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.navbarButtonsRightSideContainer {
+  height: 100%;
+  float: right;
+  margin-right: 4.6875em;
+
+  display: grid;
+  column-gap: 1.6875em;
+  grid-template-columns: auto auto;
+}
+
+.navbarButtons {
+  display: grid;
+  column-gap: 1.875em;
+  grid-template-columns: auto auto auto auto;
+}
+
+.greenButton {
+  background-color: #20ad96;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 0.25em;
+  height: 2.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: auto;
+  margin-bottom: auto;
+
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.875em;
+  font-style: normal;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.greenButton:hover {
+  background-color: #0c9982;
+  cursor: pointer;
+}
+
+.navbarButton {
+  height: 2.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: auto;
+  margin-bottom: auto;
+
+  color: var(--gray-800, #4a556c);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.9375em;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.navbarButton:hover {
+  color: #364158;
+  cursor: pointer;
+}

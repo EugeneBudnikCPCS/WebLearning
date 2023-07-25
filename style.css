@@ -1,88 +1,73 @@
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 *:focus {
   outline: none;
 }
 
-header {
-  width: 100vw;
-  height: 3.75em;
+.header {
 }
 
-header > div {
-  height: 100%;
-  max-width: 76.25em;
+.header__container {
+  max-width: 76.25rem;
+  padding: 0.625rem 1rem;
   margin: auto;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: space-between;
 }
 
-.header__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .header__navigation {
-  height: 100%;
-
   display: flex;
   justify-content: center;
-  align-items: initial;
-  grid-gap: 1.6875em;
+  gap: 1.6875rem;
 }
 
-.navigation__links {
+.header__links-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-gap: 1.875em;
+  gap: 1.875rem;
 }
 
-.navigation-link {
-  color: var(--gray-800, #4a556c);
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 0.9375em;
-  font-style: normal;
-  font-weight: 400;
-
+.link {
   text-decoration: none;
-}
-
-.navigation-link:hover {
-  color: #364158;
   cursor: pointer;
 }
 
-.green-button {
-  background-color: #20ad96;
-  padding-left: 1em;
-  padding-right: 1em;
-  border-radius: 0.25em;
-  height: 2.5em;
+.button {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.25rem;
+  height: 2.5rem;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  margin-top: auto;
-  margin-bottom: auto;
-
   font-family: "Kumbh Sans", sans-serif;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
-  color: #ffffff;
 
   text-decoration: none;
+  cursor: pointer;
 }
 
-.green-button:hover {
+.header__link {
+  color: #4a556c;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.header__link:hover {
+  color: #364158;
+}
+
+.button-green {
+  background-color: #20ad96;
+  color: #ffffff;
+}
+
+.button-green:hover {
   background-color: #0c9982;
-  cursor: pointer;
 }

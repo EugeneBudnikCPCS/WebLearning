@@ -32,11 +32,36 @@
   cursor: pointer;
 }
 
+.button-simle {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  appearance: none;
+  background-color: inherit;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .button {
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 0.25rem;
   height: 2.5rem;
+
+  border: none;
+  appearance: none;
+  background-color: inherit;
 
   display: flex;
   align-items: center;
@@ -70,4 +95,63 @@
 
 .button-green:hover {
   background-color: #0c9982;
+}
+
+.header__menu-button {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.header__menu-button img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.asd {
+  position: relative;
+}
+
+@media only screen and (max-width: 899px) {
+  .header__navigation {
+    display: none;
+  }
+
+  .header__navigation {
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+
+    /* width: 200px; */
+    padding: 1rem;
+    /* margin-top: 1rem; */
+
+    text-align: right;
+
+    position: absolute;
+
+    left: -187px;
+    /* left:  -227px; */
+
+    border: 1px solid #ccd4d6;
+    border-radius: 0.5rem;
+  }
+
+  .header__links-container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .header__menu-button:hover + .header__navigation {
+    display: flex;
+  }
+  .header__navigation:hover {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .header__menu-button {
+    display: none;
+  }
 }

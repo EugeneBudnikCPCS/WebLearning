@@ -3,11 +3,22 @@
 }
 
 .header {
+  background-color: white;
+
+  position: fixed;
+  left: 0px;
+  right: 0px;
+}
+
+.container {
+  max-width: 76.25rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .header__container {
-  max-width: 76.25rem;
-  padding: 0.625rem 1rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
   margin: auto;
   display: flex;
   align-items: center;
@@ -18,6 +29,7 @@
   display: flex;
   justify-content: center;
   gap: 1.6875rem;
+  background-color: white;
 }
 
 .header__links-container {
@@ -85,7 +97,7 @@
 }
 
 .header__link:hover {
-  color: #364158;
+  color: #20ad96;
 }
 
 .button-green {
@@ -107,51 +119,177 @@
   height: 2.5rem;
 }
 
-.asd {
+.menu {
   position: relative;
 }
 
+main {
+  padding-top: 3.75rem; /*To indent the header*/
+}
+
+.rosy-block {
+  background-color: #faf8f6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-stack {
+  padding-top: 5.75rem;
+  padding-bottom: 5.75rem;
+  display: flex;
+  align-items: center;
+}
+.header-stack > * {
+  flex: 1;
+}
+
+.header-stack__left-side {
+  margin-right: 5.563rem;
+}
+
+.header-stack__right-side {
+  margin-left: 5.75rem;
+}
+
+.subtitle {
+  color: #4a556c80;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 0.375rem;
+}
+
+h1 {
+  color: #333461;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 86.4px */
+  letter-spacing: -0.045rem;
+  margin: 0;
+}
+
+.description {
+  color: #4a556c;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 1.875rem;
+}
+
 @media only screen and (max-width: 899px) {
+  .header {
+  }
+
   .header__navigation {
     display: none;
   }
 
   .header__navigation {
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     align-items: flex-end;
 
-    /* width: 200px; */
-    padding: 1rem;
-    /* margin-top: 1rem; */
+    padding: 2rem;
 
     text-align: right;
 
-    position: absolute;
+    position: fixed;
 
-    left: -187px;
-    /* left:  -227px; */
+    left: 0px;
+    right: 0px;
+    height: 100%;
 
-    border: 1px solid #ccd4d6;
-    border-radius: 0.5rem;
+    background-color: #faf8f6;
   }
 
   .header__links-container {
-    justify-content: center;
+    justify-content: top;
     flex-direction: column;
     align-items: flex-end;
   }
 
-  .header__menu-button:hover + .header__navigation {
+  /* ------------------------ */
+
+  #menu__toggle {
+    opacity: 0;
+    position: fixed;
+    cursor: pointer;
+  }
+  #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .header__navigation {
     display: flex;
   }
-  .header__navigation:hover {
+
+  .menu__btn {
     display: flex;
+    width: 1.625rem;
+    height: 2.5rem;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.188rem;
+    background-color: #364158;
+    transition-duration: 0.25s;
+    border-radius: 0.063rem;
+  }
+
+  .menu__btn > span {
+    top: 1.188rem;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -0.563rem;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 563rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .header-stack {
+    flex-direction: column;
+  }
+
+  .header-stack__left-side {
+    margin-right: 0;
+  }
+
+  .header-stack__right-side {
+    margin-left: 0;
+    margin-top: 5.75rem;
   }
 }
 
 @media only screen and (min-width: 900px) {
-  .header__menu-button {
+  #menu__toggle {
+    display: none;
+  }
+  .menu__btn {
     display: none;
   }
 }

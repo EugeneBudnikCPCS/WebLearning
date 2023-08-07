@@ -266,7 +266,7 @@ h1 {
   }
   .menu__btn > span::after {
     content: "";
-    top: 563rem;
+    top: 0.563rem;
   }
 }
 

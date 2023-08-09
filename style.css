@@ -267,6 +267,10 @@ h2 {
   h2 {
     font-size: 2rem;
   }
+
+  .particular-areas__block {
+    padding: 1.75rem 2.3125rem;
+  }
 }
 
 @media only screen and (max-width: 899px) {

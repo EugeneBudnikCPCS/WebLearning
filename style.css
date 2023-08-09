@@ -2,6 +2,11 @@
   outline: none;
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 .header {
   background-color: white;
 
@@ -174,6 +179,17 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  color: #333461;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 3.5rem; /* 116.667% */
+  letter-spacing: -0.03rem;
+  margin: 0;
+}
+
 .description {
   color: #4a556c;
   font-family: "Kumbh Sans", sans-serif;
@@ -182,6 +198,75 @@ h1 {
   font-weight: 400;
   line-height: 160%;
   margin-top: 1.875rem;
+}
+
+.particular-areas {
+  margin: auto;
+}
+
+.particular-areas__header {
+  text-align: center;
+  margin-top: 6.5rem;
+  margin-bottom: 4.75rem;
+}
+
+.particular-areas__blocks-container {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.particular-areas__block {
+  padding: 3.5rem 4.6875rem;
+  border: 0.0625rem solid #edeff5;
+  width: 18.75rem;
+}
+
+.particular-areas__block-title {
+  color: #041434;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem; /* 133.333% */
+  letter-spacing: -0.045rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.green-color {
+  color: #20ad96;
+}
+
+.particular-areas__block-description {
+  color: #4a556c;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+  letter-spacing: -0.02rem;
+  margin: 0;
+}
+
+.particular-areas__block:first-child {
+  position: relative;
+}
+
+.particular-areas__block-pointinghand {
+  position: absolute;
+  right: 0;
+  bottom: -1.875rem;
+}
+
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width: 899px) {
@@ -291,5 +376,17 @@ h1 {
   }
   .menu__btn {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 988px) {
+  .particular-areas__block:nth-child(2) {
+    margin-top: 3.75rem;
+    margin-bottom: -3.75rem;
+  }
+
+  .particular-areas__block:nth-child(4) {
+    margin-top: 3.75rem;
+    margin-bottom: -3.75rem;
   }
 }

@@ -10,9 +10,10 @@
   <link rel="stylesheet" href="./style.css" />
   <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -33,15 +34,15 @@
             <a class="link header__link" href="#"> About us </a>
             <a class="link header__link" href="#"> Extra Salespage </a>
           </div>
-          <a class="button button-green" href="#"> Get your free guide now </a>
+          <a class="button button-green header__guide-button" href="#"> Get your free guide now </a>
         </nav>
       </div>
     </div>
   </header>
   <main>
     <div class="rosy-block">
-      <div class="container header-stack">
-        <div class="header-stack__left-side">
+      <div class="container stack-block">
+        <div class="stack-block__left-side">
           <span class="subtitle">
             I can help you in these patricular areas.
           </span>
@@ -54,7 +55,7 @@
             backed by science. Wanna transform your life?
           </p>
         </div>
-        <div class="header-stack__right-side">
+        <div class="stack-block__right-side">
           <img src="images/pexels-andrea-piacquadio-3978564 1.png" />
         </div>
       </div>
@@ -66,12 +67,11 @@
       <div class="particular-areas__blocks-container">
         <a href="#" class="link particular-areas__block">
           <img alt="Group Coaching Sessions" src="images/particular-areas/group_coaching_sessions.svg" />
-          <p class="particular-areas__block-title green-color">Group Coaching Sessions</p>
+          <p class="particular-areas__block-title">Group Coaching Sessions</p>
           <p class="particular-areas__block-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
             dolore magna aliqua minim veniam.
           </p>
-          <img class="particular-areas__block-pointinghand" src="images/pointinghand.png" />
         </a>
         <a href="#" class="link particular-areas__block">
           <img alt="Online course" src="images/particular-areas/online-course.svg" />
@@ -99,7 +99,131 @@
         </a>
       </div>
     </div>
+    <div class="container section-header-block">
+
+      <div class="section-header-block__left-side">
+        <span class="subtitle">
+          How does it work?
+        </span>
+        <h2>
+          Are you ready to transform your life?
+        </h2>
+        <p class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua minim veniam.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="container stack-block step-by-step-stack">
+      <div class="step-by-step-block">
+        <ul class="step-by-step-list">
+          <li class="step-by-step-list-item"><img src="images/icons/talk-to-me-first.svg" alt="Talk to me first">
+            <div class="step-by-step-list-item-text-block"><strong>Talk to me first</strong>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+          </li>
+          <li class="step-by-step-list-item"><img src="images/icons/schedule-a-meeting.svg" alt="Schedule a meeting">
+            <div class="step-by-step-list-item-text-block"><strong>Schedule a meeting</strong>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+          </li>
+          <li class="step-by-step-list-item"><img src="images/icons/online-consultation.svg" alt="Online consultation">
+            <div class="step-by-step-list-item-text-block"><strong>Online consultation</strong>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+          </li>
+          <li class="step-by-step-list-item"><img src="images/icons/ready-to-start.svg"
+              alt="Ready to start? Let’s talk!">
+            <div class="step-by-step-list-item-text-block"><strong>Ready to start? Let’s talk!</strong>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div class="step-by-step-right-side-image-container">
+          <img class="step-by-step-right-side-image" src="images/image-001.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container good-to-know">
+      <div class="good-to-know-header-block">
+        <h2>
+          Good to know.
+        </h2>
+        <p class="description">
+          Everything you need to know about the my services.
+        </p>
+      </div>
+      <div class="good-to-know__question-container">
+        <div class="good-to-know__question-cell">
+          <input type='checkbox' name='good-to-know-input' value='valuable' id="good-to-know-input-1" />
+          <label for="good-to-know-input-1">
+            <strong>How long does the coaching process take?</strong>
+          </label>
+          <p>Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized
+            30-minute onboarding call to get you up and running as soon as possible.</p>
+        </div>
+        <hr class="good-to-know__question-container-separator" />
+        <div class="good-to-know__question-cell">
+          <input type='checkbox' name='good-to-know-input' value='valuable' id="good-to-know-input-2" />
+          <label for="good-to-know-input-2">
+            <strong>What if I wanted to end my coaching engagement?</strong>
+          </label>
+          <p>Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized
+            30-minute onboarding call to get you up and running as soon as possible.</p>
+        </div>
+        <hr class="good-to-know__question-container-separator" />
+        <div class="good-to-know__question-cell">
+          <input type='checkbox' name='good-to-know-input' value='valuable' id="good-to-know-input-3" />
+          <label for="good-to-know-input-3">
+            <strong>Can I change through coaching?</strong>
+          </label>
+          <p>Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized
+            30-minute onboarding call to get you up and running as soon as possible.</p>
+        </div>
+        <hr class="good-to-know__question-container-separator" />
+        <div class="good-to-know__question-cell">
+          <input type='checkbox' name='good-to-know-input' value='valuable' id="good-to-know-input-4" />
+          <label for="good-to-know-input-4">
+            <strong>How often do we meet?</strong>
+          </label>
+          <p>Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized
+            30-minute onboarding call to get you up and running as soon as possible.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container go-to-chat">
+      <div class="go-to-chat__container">
+        <h4 class="go-to-chat__header">Still have questions?</h4>
+        <p class="go-to-chat__description">Can’t find the answer you’re looking for? Please chat to our friendly team.
+        </p>
+        <a href="#" class="button button-green go-to-chat__button">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="subscribe-wide-container">
+      <div class="container subscribe-container">
+        <div class="subscribe-description-container">
+          <h3>Get notified when I publish new articles</h3>
+          <p class="subscribe-description">Stay up to date with the latest news, announcements, and articles.</p>
+        </div>
+        <form action="#" class="subscribe-form">
+          <input type="email" id="fname" name="fname" value="" placeholder="Enter your email"
+            class="subscribe-input"><br>
+          <input type="submit" value="Subscribe" class="button button-green subscribe-button">
+        </form>
+      </div>
+    </div>
   </main>
+  <footer>
+
+  </footer>
   <!-- <script src="index.js"></script> -->
 </body>
 
